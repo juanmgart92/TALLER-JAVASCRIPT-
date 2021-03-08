@@ -1,0 +1,27 @@
+<!-- Nombres: Juan David Lopez Lombana - Juan Manuel Guerrero Arteaga - Adalberto Gonzales Cuesta -->
+
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <title>Diferencia de Dias</title>
+</head>
+<body>
+    <h3>Dias Faltantes para Diciembre</h3>
+    <script>
+        RestarFechas = function (F1,F2){
+        var Fecha1 = F1.split('/');
+        var Fecha2 = F2.split('/'); 
+        var FFecha1 = Date.UTC(Fecha1[2],Fecha1[1]-1,Fecha1[0]);
+        var FFecha2 = Date.UTC(Fecha2[2],Fecha2[1]-1,Fecha2[0]);
+        var Diferencia = FFecha2 - FFecha1;
+        var Dias = Math.floor(Diferencia/(1000*60*60*24));
+        return Dias;
+        }
+        var Fecha = new Date();
+        var F1 = '05/03/2021';
+        var F2 = '24/12/2021';
+        document.write('Faltan aproximadamente:<br>'+RestarFechas(F1,F2)+' Dias');
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- Nombres: Juan David Lopez Lombana - Juan Manuel Guerrero Arteaga - Adalberto Gonzales Cuesta -->
+
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <title>Factial de un numero</title>
+</head>
+<body>
+    <H1>
+        Factorial de un numero
+    </H1>
+    
+    <script>
+
+        var n = prompt("Ingrese un numero:");
+
+        function factorial (n){
+            if (n == 0){
+                return 1;
+            }else{
+                return n * factorial(n-1);
+            }
+        }
+
+        alert(factorial(n));
+        document.write("El factorial de su numero ingresado es: "+factorial(n));
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Nombres: Juan David Lopez Lombana - Juan Manuel Guerrero Arteaga - Adalberto Gonzales Cuesta -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1, primo;
+        n1 = parseInt(prompt("Digite un numero:"));
+        i = 2;
+        primo = true;
+
+        function NumPrimo(n1,primo,i){
+            do{
+                if(n1%i==0){
+                    primo = false;
+                }
+                i++;
+            }while(i<n1);
+            
+            if(primo==true){
+                document.write("El numero " +n1+ "Es primo");  
+            }else{
+                document.write("El numero " +n1+ "No es primo");
+            }
+        }
+
+        resultado = NumPrimo(n1,primo,i);
+        document.write(resultado);
+    </script>
+    
+</body>
+</html>

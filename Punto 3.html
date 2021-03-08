@@ -1,0 +1,30 @@
+<!-- Nombres: Juan David Lopez Lombana - Juan Manuel Guerrero Arteaga - Adalberto Gonzales Cuesta -->
+
+
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <title>Numeros Menores a Cero</title>
+</head>
+<body>
+    <h2>Numeros menores a 0</h2>
+    <script>
+        function Menor (Numeros){
+            return Numeros <= 0;
+        }
+        const Numeros = [prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:"),
+        prompt("Escribe un solo numero:")];
+
+        document.write("Estos fueron los numeros digitados: " + Numeros +
+        "<br> Y estos son los numeros menores a 0: " + Numeros.filter(Menor));
+    </script>
+</body>
+</html>
